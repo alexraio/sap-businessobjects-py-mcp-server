@@ -20,7 +20,7 @@ Follow these steps to set up and configure the server.
 Navigate to the `python_sap_server` directory and install the required packages from the `requirements.txt` file:
 
 ```bash
-cd /home/aballarin/git/sap-businessobjects-bi-mcp-server-by-cdata/python_sap_server
+cd ~/git/sap-businessobjects-bi-mcp-server-by-cdata/python_sap_server
 pip install -r requirements.txt
 ```
 
@@ -47,7 +47,7 @@ There are two primary ways to run the server.
 You can run the server directly from your terminal. This is useful for testing and development. The server will use STDIO for communication.
 
 ```bash
-python /home/aballarin/git/sap-businessobjects-bi-mcp-server-by-cdata/python_sap_server/app.py
+python ~/git/sap-businessobjects-bi-mcp-server-by-cdata/python_sap_server/app.py
 ```
 
 ### Method 2: Integration with an MCP Client (e.g., Gemini)
@@ -63,9 +63,9 @@ To have your client automatically load the server, you need to add it to the cli
     "sap-bo-python": {
       "command": "python3",
       "args": [
-        "/home/aballarin/git/sap-businessobjects-bi-mcp-server-by-cdata/python_sap_server/app.py"
+        "~/git/sap-businessobjects-bi-mcp-server-by-cdata/python_sap_server/app.py"
       ],
-      "workingDirectory": "/home/aballarin/git/sap-businessobjects-bi-mcp-server-by-cdata/python_sap_server"
+      "workingDirectory": "~/git/sap-businessobjects-bi-mcp-server-by-cdata/python_sap_server"
     }
   }
 }
